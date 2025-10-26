@@ -2,129 +2,159 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>TaxiNeto360Plus — Documentación legal y soporte</title>
+  <title>TaxiNeto360Plus · Documentos legales</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Centro de documentación oficial de TaxiNeto360Plus: términos, privacidad, soporte y eliminación de cuenta." />
+  <meta name="description" content="Enlaces oficiales de TaxiNeto360Plus: Política de Privacidad, Términos y eliminación de cuenta." />
   <meta name="robots" content="noindex" />
   <style>
-    :root {
-      --fg:#0b1320;
-      --muted:#667085;
-      --link:#0b5fff;
-      --border:#e5e7eb;
-      --card:#ffffff;
-      --shadow:0 1px 2px rgba(16,24,40,.04),0 1px 3px rgba(16,24,40,.08);
-      --radius:14px;
+    :root{
+      --bg:#0b1220;            /* fondo superior */
+      --bg2:#0a0f1a;           /* fondo inferior */
+      --fg:#e5e7eb;            /* texto principal */
+      --muted:#9aa4b2;         /* texto secundario */
+      --card:#0f1729;          /* tarjetas */
+      --border:#1f2a44;        /* borde sutil */
+      --accent:#53a1ff;        /* enlaces */
+      --radius:18px;
+      --shadow:0 8px 28px rgba(0,0,0,.35), 0 2px 8px rgba(0,0,0,.25);
     }
-    body {
+
+    /* Lienzo */
+    html,body{height:100%}
+    body{
+      margin:0;
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;
       color:var(--fg);
-      background:#fff;
-      line-height:1.65;
-      margin:0;
-      padding:0;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, #16213e 0%, transparent 60%),
+        radial-gradient(1000px 500px at 90% 0%, #0e1a33 0%, transparent 55%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      display:flex;
+      flex-direction:column;
     }
-    .container {
-      max-width:920px;
-      margin:40px auto;
+
+    /* Contenedor */
+    .wrap{
+      width:100%;
+      max-width:1100px;
+      margin:48px auto 24px;
       padding:0 20px;
     }
-    h1 {
-      font-size:clamp(1.8rem,2.4vw,2.2rem);
-      margin:0 0 8px 0;
+
+    h1{
+      font-size:clamp(1.6rem,3.2vw,2.4rem);
+      line-height:1.2;
+      margin:0 0 6px 0;
+      letter-spacing:.2px;
     }
-    h2 {
-      font-size:1.25rem;
-      margin-top:0;
-    }
-    .meta {
+    .sub{
       color:var(--muted);
-      margin-bottom:28px;
+      margin:0 0 28px 0;
+      font-size:clamp(.95rem,1.6vw,1.05rem);
     }
-    a {
-      color:var(--link);
-      text-decoration:none;
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
     }
-    a:hover {
-      text-decoration:underline;
+    @media (min-width:780px){
+      .grid{ grid-template-columns:repeat(3,1fr); }
     }
-    .card {
+
+    .card{
       background:var(--card);
       border:1px solid var(--border);
       border-radius:var(--radius);
-      padding:24px;
-      margin:18px 0;
+      padding:22px;
       box-shadow:var(--shadow);
+      transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      min-height:170px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
     }
-    ul {
-      padding-left:20px;
-      margin:12px 0;
+    .card:hover{
+      transform:translateY(-2px);
+      border-color:#2a3a63;
+      box-shadow:0 10px 30px rgba(9,12,22,.55);
     }
-    code {
-      background:#f2f4f7;
-      padding:3px 6px;
-      border-radius:6px;
-      font-family:monospace;
-      font-size:0.9rem;
+    .card h2{
+      font-size:1.12rem;
+      margin:0 0 6px 0;
     }
-    footer {
-      margin-top:40px;
-      padding-top:16px;
-      border-top:1px solid var(--border);
+    .card p{
       color:var(--muted);
-      font-size:0.9rem;
-      text-align:center;
+      margin:0 0 14px 0;
     }
+    a{
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+    }
+    a:hover{ text-decoration:underline; }
+
+    footer{
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,.06);
+      margin-top:36px;
+      padding:18px 0 34px;
+      text-align:left;
+      font-size:.95rem;
+    }
+    .email{ color:#7fb3ff; font-weight:600; }
+    .row{ display:flex; gap:18px; flex-wrap:wrap; align-items:center; }
   </style>
 </head>
 <body>
-  <div class="container">
+  <main class="wrap">
     <header>
-      <h1>TaxiNeto360Plus</h1>
-      <p class="meta">
-        Centro de documentación legal y soporte •  
-        Contacto: <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
-      </p>
+      <h1>TaxiNeto360Plus · Documentos legales</h1>
+      <p class="sub">Enlaces oficiales para usuarios y para Google Play.</p>
     </header>
 
-    <section class="card">
-      <h2>Documentación oficial</h2>
-      <ul>
-        <li><a href="terminos-taxineto360plus.html">📜 Términos y Condiciones</a></li>
-        <li><a href="privacidad-taxineto360plus.html">🔒 Política de Privacidad</a></li>
-        <li><a href="soporte-taxineto360plus.html">💬 Soporte y Contacto</a></li>
-        <li><a href="eliminar-cuenta-taxineto360plus.html">🗑️ Eliminar cuenta y datos</a></li>
-      </ul>
-    </section>
+    <section class="grid" aria-label="Tarjetas de documentos">
+      <!-- PRIVACIDAD -->
+      <article class="card">
+        <div>
+          <h2>Política de Privacidad</h2>
+          <p>Qué datos tratamos, con qué finalidad y cómo ejercer tus derechos.</p>
+        </div>
+        <div>
+          <a href="privacidad-taxineto360plus.html">Abrir Política de Privacidad</a>
+        </div>
+      </article>
 
-    <section class="card">
-      <h2>Acerca de TaxiNeto360Plus</h2>
-      <p>
-        <strong>TaxiNeto360Plus</strong> es una aplicación desarrollada por <strong>Paula Sánchez</strong>,
-        programadora independiente con sede en Barcelona (España).  
-        Su objetivo es ayudar a conductores a registrar sus jornadas, gastos, propinas y liquidaciones
-        de forma rápida, visual y segura.
-      </p>
-      <p>
-        La app no contiene anuncios ni recopila datos analíticos o de comportamiento.  
-        Toda la información se almacena de forma privada mediante Google Firebase.
-      </p>
-    </section>
+      <!-- TÉRMINOS -->
+      <article class="card">
+        <div>
+          <h2>Términos y Condiciones</h2>
+          <p>Condiciones de uso del servicio: elegibilidad, responsabilidades y límites.</p>
+        </div>
+        <div>
+          <a href="terminos-taxineto360plus.html">Abrir Términos y Condiciones</a>
+        </div>
+      </article>
 
-    <section class="card">
-      <h2>Cómo acceder</h2>
-      <p>Puedes visitar cada página directamente desde los enlaces anteriores o copiando las siguientes URL:</p>
-      <ul>
-        <li><code>https://pau111000.github.io/taxineto360Plus-web/terminos-taxineto360plus.html</code></li>
-        <li><code>https://pau111000.github.io/taxineto360Plus-web/privacidad-taxineto360plus.html</code></li>
-        <li><code>https://pau111000.github.io/taxineto360Plus-web/soporte-taxineto360plus.html</code></li>
-        <li><code>https://pau111000.github.io/taxineto360Plus-web/eliminar-cuenta-taxineto360plus.html</code></li>
-      </ul>
+      <!-- ELIMINAR CUENTA -->
+      <article class="card">
+        <div>
+          <h2>Eliminar cuenta y datos</h2>
+          <p>Opciones para eliminar tu cuenta desde la app o iniciar la solicitud desde la web.</p>
+        </div>
+        <div>
+          <a href="eliminar-cuenta-taxineto360plus.html">Abrir página de eliminación</a>
+        </div>
+      </article>
     </section>
 
     <footer>
-      © 2025 Paula Sánchez — Desarrolladora independiente, Barcelona (España)
+      <div class="row">
+        <span>© TaxiNeto360Plus</span>
+        <span>•</span>
+        <span>Soporte: <a class="email" href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a></span>
+      </div>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
+
