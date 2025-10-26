@@ -7,10 +7,10 @@ Aquí se alojan los documentos requeridos por Google Play para garantizar la tra
 
 ## 📄 Enlaces públicos
 
-- [Términos y Condiciones](https://TU_USUARIO.github.io/taxineto360plus-web/terminos-taxineto360plus.html)  
-- [Política de Privacidad](https://TU_USUARIO.github.io/taxineto360plus-web/privacidad-taxineto360plus.html)  
-- [Eliminar cuenta y datos](https://TU_USUARIO.github.io/taxineto360plus-web/eliminar-cuenta-taxineto360plus.html)  
-- [Soporte](https://TU_USUARIO.github.io/taxineto360plus-web/soporte-taxineto360plus.html)
+- [Términos y Condiciones](https://pau111000.github.io/taxineto360plus-web/terminos-taxineto360plus.html)  
+- [Política de Privacidad](https://pau111000.github.io/taxineto360plus-web/privacidad-taxineto360plus.html)  
+- [Eliminar cuenta y datos](https://pau111000.github.io/taxineto360plus-web/eliminar-cuenta-taxineto360plus.html)  
+- [Soporte](https://pau111000.github.io/taxineto360plus-web/soporte-taxineto360plus.html)
 
 > 📌 Estas páginas se cargan desde GitHub Pages y pueden usarse directamente en la ficha de **Google Play Console** de TaxiNeto360Plus.
 
