@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>Política de Privacidad — TaxiNeto360Plus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Política de Privacidad de TaxiNeto360Plus: qué datos tratamos, con qué finalidad, base legal, conservación, derechos y contacto." />
+  <meta name="description" content="Política de Privacidad de TaxiNeto360Plus: qué datos tratamos, para qué los usamos, base legal, conservación, seguridad, derechos y contacto." />
   <meta name="robots" content="noindex" />
   <style>
     :root{
@@ -17,26 +17,25 @@
       --radius:16px;
       --shadow:0 6px 22px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
     }
-
     body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;
       margin:0;
       background:var(--bg);
       color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;
       line-height:1.65;
     }
-
-    .wrap{max-width:900px;margin:50px auto;padding:0 20px;}
-    h1{font-size:clamp(1.6rem,3vw,2.3rem);margin:0 0 10px 0;}
-    h2{font-size:1.25rem;margin-top:36px;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:6px;}
+    main.wrap{max-width:960px;margin:50px auto;padding:0 20px;}
+    h1{font-size:clamp(1.6rem,3vw,2.3rem);margin:0 0 10px;}
+    h2{font-size:1.25rem;margin-top:34px;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:6px;}
     p{margin:12px 0;}
     ul{padding-left:20px;}
-    li{margin-bottom:8px;}
+    li{margin:6px 0;}
     a{color:var(--accent);text-decoration:none;}
     a:hover{text-decoration:underline;}
     .meta{color:var(--muted);margin-bottom:28px;}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;margin:24px 0;}
-    footer{margin-top:50px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);text-align:center;color:var(--muted);font-size:.95rem;}
+    .note{color:var(--muted);font-size:.95rem;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin:24px 0;}
+    footer{margin-top:42px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);text-align:center;color:var(--muted);font-size:.95rem;}
   </style>
 </head>
 <body>
@@ -54,106 +53,122 @@
       <p>
         La responsable del tratamiento es <strong>Paula Sánchez</strong>, desarrolladora independiente y creadora de
         <strong>TaxiNeto360Plus</strong>, con residencia en Barcelona (España).
-        Contacto: <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>.
+        Puedes contactar en <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>.
       </p>
     </section>
 
     <section>
-      <h2>2. Datos personales tratados</h2>
-      <p>La app gestiona únicamente los datos mínimos necesarios para funcionar:</p>
+      <h2>2. Datos personales que tratamos</h2>
+      <p>La aplicación gestiona únicamente los datos mínimos necesarios para su funcionamiento:</p>
       <ul>
-        <li><strong>Cuenta:</strong> correo y contraseña (Firebase Authentication).</li>
-        <li><strong>Uso de la app:</strong> jornadas, importes, propinas, porcentajes, notas (Cloud Firestore).</li>
-        <li><strong>Adjuntos:</strong> imágenes de cierres/tickets (Firebase Storage).</li>
+        <li><strong>Cuenta de acceso:</strong> correo electrónico y contraseña (gestionados por Firebase Authentication).</li>
+        <li><strong>Datos de uso que introduces:</strong> jornadas, importes, propinas, porcentajes, notas (Cloud Firestore).</li>
+        <li><strong>Adjuntos opcionales:</strong> imágenes de cierres/tickets (Firebase Storage).</li>
       </ul>
-      <p>
-        <strong>No</strong> recopilamos ubicación, contactos, ni identificadores publicitarios.  
-        <strong>No</strong> usamos analítica, rastreadores ni anuncios.
+      <p class="note">
+        No recopilamos ubicación, contactos, identificadores publicitarios ni otros datos sensibles.
+        No utilizamos analítica, cookies de seguimiento, SDKs de publicidad ni perfiles de comportamiento.
       </p>
     </section>
 
     <section>
-      <h2>3. Finalidad</h2>
+      <h2>3. Finalidades del tratamiento</h2>
+      <ul>
+        <li>Permitir el registro e inicio de sesión del usuario.</li>
+        <li>Guardar y sincronizar las jornadas y documentos que introduces.</li>
+        <li>Generar cálculos y resúmenes para tu propia gestión (p. ej., CSV).</li>
+        <li>Atender solicitudes de soporte o ejercicio de derechos de privacidad.</li>
+      </ul>
+      <p>Los datos no se venden ni se ceden a terceros con fines comerciales.</p>
+    </section>
+
+    <section>
+      <h2>4. Base jurídica</h2>
+      <ul>
+        <li><strong>Ejecución del contrato/servicio (art. 6.1.b RGPD):</strong> prestación de las funcionalidades de la app.</li>
+        <li><strong>Consentimiento (art. 6.1.a RGPD):</strong> cuando subes voluntariamente información/adjuntos a tu espacio.</li>
+        <li><strong>Interés legítimo (art. 6.1.f RGPD):</strong> seguridad, prevención de abusos y mejora técnica esencial.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Conservación y eliminación</h2>
       <p>
-        Prestar el servicio: permitir que gestiones tu cuenta y registres tus jornadas y liquidaciones.
-        Los datos no se venden ni se usan con fines comerciales.
+        Conservamos tus datos mientras tu cuenta esté activa. Si eliminas tu cuenta, se borran de forma permanente tu perfil,
+        tus jornadas y tus adjuntos almacenados en Firebase.
+      </p>
+      <p>
+        Puedes hacerlo desde la app (Ajustes → Privacidad → <em>Eliminar cuenta y datos</em>) o seguir
+        el procedimiento descrito en <a href="eliminar-cuenta-taxineto360plus.html">Eliminar cuenta y datos</a>.
       </p>
     </section>
 
     <section>
-      <h2>4. Base legal</h2>
+      <h2>6. Proveedores y transferencias</h2>
       <p>
-        Ejecución del servicio solicitado al registrarte (art. 6.1.b RGPD) y tu consentimiento informado
-        para el uso de tus datos con las finalidades indicadas (art. 6.1.a RGPD).
-      </p>
-    </section>
-
-    <section>
-      <h2>5. Conservación</h2>
-      <p>
-        Conservamos los datos mientras la cuenta esté activa.
-        Si eliminas tu cuenta, se borran permanentemente tu perfil, jornadas y archivos de Firebase.
-        Consulta el procedimiento en <a href="eliminar-cuenta-taxineto360plus.html">Eliminar cuenta y datos</a>.
-      </p>
-    </section>
-
-    <section>
-      <h2>6. Encargados y transferencias</h2>
-      <p>
-        Usamos <strong>Google Firebase</strong> (Authentication, Firestore y Storage). Los datos pueden alojarse dentro o fuera de la UE bajo
-        <strong>Cláusulas Contractuales Tipo</strong>. Paula Sánchez no accede a contraseñas ni contenidos cifrados.
+        Usamos <strong>Google Firebase</strong> (Authentication, Cloud Firestore y Firebase Storage) como proveedor de infraestructura.
+        El alojamiento puede realizarse dentro o fuera de la UE aplicando las <strong>Cláusulas Contractuales Tipo</strong> de la Comisión Europea.
+        Paula Sánchez no accede a tus contraseñas ni a contenidos cifrados por los servicios.
       </p>
     </section>
 
     <section class="card">
       <h2>7. Derechos de las personas usuarias</h2>
-      <p>Puedes ejercer en cualquier momento:</p>
+      <p>Puedes ejercer en cualquier momento los derechos de:</p>
       <ul>
-        <li>Acceso, rectificación, eliminación.</li>
-        <li>Limitación u oposición al tratamiento.</li>
-        <li>Portabilidad.</li>
-        <li>Retirada del consentimiento.</li>
+        <li><strong>Acceso</strong> a tus datos personales.</li>
+        <li><strong>Rectificación</strong> de datos inexactos.</li>
+        <li><strong>Supresión</strong> (“derecho al olvido”).</li>
+        <li><strong>Limitación</strong> u <strong>oposición</strong> al tratamiento.</li>
+        <li><strong>Portabilidad</strong> de tus datos.</li>
+        <li><strong>Retirada del consentimiento</strong> sin afectar a la licitud previa.</li>
       </ul>
       <p>
-        Escríbenos a <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a> con el asunto
-        “Derechos de privacidad TaxiNeto360Plus”, indicando el correo con el que te registraste.
+        Para ejercerlos, escribe a <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
+        con el asunto “Derechos de privacidad TaxiNeto360Plus” e indica el correo con el que te registraste.
+      </p>
+      <p class="note">
+        También puedes dirigirte a la autoridad de control competente (AEPD, en España) si consideras que no hemos atendido
+        correctamente tu solicitud.
       </p>
     </section>
 
     <section>
       <h2>8. Seguridad</h2>
       <p>
-        Aplicamos medidas estándar: autenticación segura, HTTPS y reglas de acceso por usuario.
-        Ningún sistema es infalible: usa contraseñas robustas y protege tu dispositivo.
+        Implementamos medidas estándar del sector: autenticación segura, comunicaciones cifradas (HTTPS) y reglas de acceso
+        por usuario en base de datos y almacenamiento. Aun así, ningún sistema es 100% infalible: utiliza contraseñas robustas
+        y protege tu dispositivo.
       </p>
     </section>
 
     <section>
-      <h2>9. Pagos</h2>
+      <h2>9. Pagos y compras</h2>
       <p>
-        No procesamos datos de pago en la app. El único cargo se realiza a través de <strong>Google Play</strong>
-        al descargarla. No almacenamos datos bancarios ni de tarjetas.
+        El acceso completo requiere un <strong>pago único</strong> gestionado por <strong>Google Play</strong> al descargar la app.
+        No procesamos datos bancarios ni de tarjetas en nuestros servidores; no hay suscripciones.
       </p>
     </section>
 
     <section>
-      <h2>10. Menores</h2>
-      <p>El servicio no está dirigido a menores de 18 años. Podremos suspender o eliminar cuentas de menores.</p>
-    </section>
-
-    <section>
-      <h2>11. Cambios en esta política</h2>
+      <h2>10. Menores de edad</h2>
       <p>
-        Podemos actualizar esta Política para reflejar cambios legales o del servicio. Publicaremos aquí la versión vigente
-        e indicaremos la fecha de actualización.
+        El servicio no está dirigido a menores de 18 años. Podemos suspender o eliminar cuentas creadas por menores.
       </p>
     </section>
 
-     <footer>
-      © 2025 Taxi360 — Plataforma de gestión para conductores, Barcelona (España) • 
+    <section>
+      <h2>11. Cambios en esta Política</h2>
+      <p>
+        Esta Política podrá actualizarse para reflejar cambios legales o funcionales. Publicaremos la versión vigente en esta página
+        indicando la fecha de última actualización.
+      </p>
+    </section>
+
+    <footer>
+      © 2025 Taxi360 — Plataforma de gestión para conductores, Barcelona (España) •
       <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
     </footer>
   </main>
 </body>
 </html>
-
