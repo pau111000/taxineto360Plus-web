@@ -7,109 +7,151 @@
   <meta name="description" content="Guía para eliminar tu cuenta y todos los datos asociados en TaxiNeto360Plus." />
   <meta name="robots" content="noindex" />
   <style>
-    :root{--fg:#111;--muted:#6b7280;--link:#0b5fff}
+    :root{
+      --bg:#0b1220;
+      --fg:#e5e7eb;
+      --muted:#9aa4b2;
+      --accent:#4ea1ff;
+      --accent-2:#7dd3fc;
+      --border:#1f2a44;
+      --card:#0f1729;
+      --radius:16px;
+      --shadow:0 6px 22px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
+      --danger:#f87171;
+    }
+
+    *{box-sizing:border-box}
     body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;
+      margin:0;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(78,161,255,.12), transparent 60%),
+        radial-gradient(1000px 600px at 120% 10%, rgba(125,211,252,.10), transparent 50%),
+        var(--bg);
       color:var(--fg);
-      max-width:880px;
-      margin:40px auto;
-      padding:0 16px;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;
       line-height:1.65;
-      background:#fff;
     }
-    h1{margin:0 0 6px 0;font-size:2rem}
-    .meta{color:var(--muted);margin-bottom:24px}
-    a{color:var(--link);text-decoration:none}
+    .wrap{max-width:920px;margin:56px auto;padding:0 20px;}
+    header h1{margin:0 0 8px 0;font-size:clamp(1.6rem,3vw,2.3rem)}
+    .meta{color:var(--muted);margin-bottom:28px}
+    a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
-    ul{padding-left:20px}
+
     .card{
-      background:#fff;
-      border:1px solid #e5e7eb;
-      border-radius:12px;
-      padding:20px;
-      margin:16px 0;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      margin:18px 0;
     }
+    h2{
+      font-size:1.15rem;
+      margin:0 0 10px 0;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      padding-bottom:6px;
+    }
+    ul{padding-left:22px;margin:10px 0}
+    li{margin:6px 0}
+
+    .cta{
+      display:inline-block;
+      margin-top:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#0b1220;
+      font-weight:600;
+      padding:10px 14px;
+      border-radius:12px;
+      box-shadow:0 8px 24px rgba(78,161,255,.35);
+    }
+    .cta:hover{filter:brightness(1.05);text-decoration:none}
+
+    .warn{
+      border-color:rgba(248,113,113,.35);
+      background:linear-gradient(180deg, rgba(248,113,113,.08), transparent 70%), var(--card);
+    }
+
     footer{
-      margin-top:40px;
-      padding-top:16px;
-      border-top:1px solid #e5e7eb;
+      margin-top:44px;
+      padding-top:18px;
+      border-top:1px solid rgba(255,255,255,.08);
       color:var(--muted);
-      font-size:0.9rem;
       text-align:center;
+      font-size:.95rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Eliminar cuenta y datos</h1>
-    <p class="meta">
-      TaxiNeto360Plus • Última actualización: 26/10/2025 •  
-      Contacto: <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
-    </p>
-  </header>
+  <main class="wrap">
+    <header>
+      <h1>Eliminar cuenta y datos</h1>
+      <p class="meta">
+        TaxiNeto360Plus • Última actualización: 26/10/2025 •
+        Contacto: <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
+      </p>
+    </header>
 
-  <section class="card">
-    <h2>Cómo eliminar tu cuenta</h2>
-    <p>
-      Puedes eliminar tu cuenta y todos tus datos de forma permanente de dos maneras:
-    </p>
-    <ol>
-      <li>
-        <strong>Desde la aplicación TaxiNeto360Plus:</strong><br />
-        Abre la app → ve a <em>Ajustes → Privacidad → Eliminar cuenta y datos</em>.<br />
-        Esta opción borra toda tu información almacenada en la nube (documentos, jornadas y archivos en Firebase).
-      </li>
-      <li>
-        <strong>Desde esta página:</strong><br />
-        Si ya no tienes acceso a la app, puedes solicitar el borrado manual escribiendo a  
-        <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>  
-        desde el mismo correo con el que creaste la cuenta.
-      </li>
-    </ol>
-  </section>
+    <section class="card warn">
+      <h2>Cómo eliminar tu cuenta</h2>
+      <p>Puedes eliminar tu cuenta y todos tus datos de forma permanente de dos maneras:</p>
+      <ol>
+        <li>
+          <strong>Desde la aplicación TaxiNeto360Plus</strong><br />
+          Abre la app → ve a <em>Ajustes → Privacidad → Eliminar cuenta y datos</em>.<br />
+          Esta opción borra toda tu información almacenada en la nube (documentos, jornadas y archivos en Firebase).
+        </li>
+        <li>
+          <strong>Si no tienes acceso a la app</strong><br />
+          Solicita el borrado manual escribiendo desde el mismo correo con el que creaste la cuenta a:
+          <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>.
+        </li>
+      </ol>
+      <a class="cta" href="mailto:taxi360barcelona@gmail.com?subject=Eliminar%20cuenta%20TaxiNeto360Plus&body=Quiero%20eliminar%20mi%20cuenta%20y%20todos%20mis%20datos.%0ACorreo%20registrado:%20_____">Solicitar borrado por email</a>
+    </section>
 
-  <section class="card">
-    <h2>Qué datos se eliminan</h2>
-    <ul>
-      <li>Tu cuenta de acceso (correo y autenticación Firebase).</li>
-      <li>Todas las jornadas registradas en tu perfil.</li>
-      <li>Todos los archivos adjuntos (fotos, recibos, cierres de TPV o taxímetro).</li>
-      <li>Tu documento principal en la base de datos de usuarios.</li>
-    </ul>
-    <p>
-      Una vez eliminados, los datos no pueden recuperarse.  
-      El proceso es irreversible y se realiza de forma segura a través de Firebase Firestore y Firebase Storage.
-    </p>
-  </section>
+    <section class="card">
+      <h2>Qué datos se eliminan</h2>
+      <ul>
+        <li>Tu cuenta de acceso (correo y autenticación Firebase).</li>
+        <li>Todas las jornadas registradas en tu perfil.</li>
+        <li>Todos los archivos adjuntos (fotos, recibos, cierres de TPV o taxímetro).</li>
+        <li>Tu documento principal en la base de datos de usuarios.</li>
+      </ul>
+      <p>
+        Una vez eliminados, los datos <strong>no pueden recuperarse</strong>.
+        El proceso es irreversible y se realiza de forma segura en Firebase Firestore y Firebase Storage.
+      </p>
+    </section>
 
-  <section class="card">
-    <h2>Conservación mínima por motivos legales</h2>
-    <p>
-      Solo se mantendrá la información estrictamente necesaria para cumplir obligaciones legales
-      (por ejemplo, seguridad, prevención de fraudes o auditorías técnicas).  
-      En ningún caso se conservarán datos personales ni registros de tus jornadas.
-    </p>
-  </section>
+    <section class="card">
+      <h2>Conservación mínima por motivos legales</h2>
+      <p>
+        Solo se mantendrá la información estrictamente necesaria para cumplir obligaciones legales
+        (seguridad, prevención de fraudes o auditorías técnicas).
+        En ningún caso se conservarán tus jornadas ni archivos personales.
+      </p>
+    </section>
 
-  <section class="card">
-    <h2>Confirmación del borrado</h2>
-    <p>
-      Si realizas la eliminación desde la app, verás un mensaje confirmando que tus datos han sido eliminados correctamente.  
-      Si solicitas el borrado por correo electrónico, recibirás una confirmación de eliminación en un plazo máximo de 15 días hábiles.
-    </p>
-  </section>
+    <section class="card">
+      <h2>Confirmación del borrado</h2>
+      <p>
+        Si eliminas desde la app, verás un mensaje confirmando que tus datos se han borrado correctamente.
+        Si solicitas el borrado por correo electrónico, recibirás una confirmación en un plazo máximo de 15 días hábiles.
+      </p>
+    </section>
 
-  <section class="card">
-    <h2>Soporte</h2>
-    <p>
-      Si tienes dudas o problemas con el proceso de eliminación, contacta al correo  
-      <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>  
-      o visita la página de <a href="soporte-taxineto360plus.html">Soporte</a>.
-    </p>
-  </section>
+    <section class="card">
+      <h2>Soporte</h2>
+      <p>
+        ¿Dudas con el proceso? Escríbenos a
+        <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
+        o visita la página de <a href="soporte-taxineto360plus.html">Soporte</a>.
+      </p>
+    </section>
 
-  <footer>
-    © 2025 Paula Sánchez — Desarrolladora independiente, Barcelona (España)
-  </footer>
+    <footer>
+      © 2025 Paula Sánchez — Desarrolladora independiente, Barcelona (España)
+    </footer>
+  </main>
 </body>
 </html>
