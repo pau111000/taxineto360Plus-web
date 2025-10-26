@@ -7,120 +7,160 @@
   <meta name="description" content="Página oficial de soporte y contacto de TaxiNeto360Plus. Preguntas frecuentes, incidencias y asistencia técnica." />
   <meta name="robots" content="noindex" />
   <style>
-    :root { --fg:#111; --muted:#6b7280; --link:#0b5fff }
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Helvetica, Arial, sans-serif;
-      color: var(--fg);
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.65;
-      background: #fff;
+    :root{
+      --bg:#0b1220;
+      --fg:#e5e7eb;
+      --muted:#9aa4b2;
+      --accent:#4ea1ff;
+      --accent-2:#7dd3fc;
+      --border:#1f2a44;
+      --card:#0f1729;
+      --radius:16px;
+      --shadow:0 6px 22px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25);
     }
-    h1 { margin: 0 0 4px 0; font-size: 1.8rem }
-    h2 { margin-top: 28px; font-size: 1.25rem }
-    section { margin: 22px 0 }
-    a { color: var(--link); text-decoration: none }
-    a:hover { text-decoration: underline }
-    ul { padding-left: 20px }
-    .meta { color: var(--muted); margin-bottom: 24px }
-    .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(78,161,255,.12), transparent 60%),
+        radial-gradient(1000px 600px at 120% 10%, rgba(125,211,252,.10), transparent 50%),
+        var(--bg);
+      color:var(--fg);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;
+      line-height:1.65;
+    }
+    .wrap{max-width:920px;margin:56px auto;padding:0 20px;}
+    header h1{margin:0 0 8px 0;font-size:clamp(1.6rem,3vw,2.3rem)}
+    .meta{color:var(--muted);margin-bottom:28px}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    h2{
+      font-size:1.15rem;
+      margin:0 0 10px 0;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      padding-bottom:6px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      margin:18px 0;
+    }
+
+    ul{padding-left:22px;margin:10px 0}
+    li{margin:6px 0}
+    p{margin:12px 0}
+
+    footer{
+      margin-top:44px;
+      padding-top:18px;
+      border-top:1px solid rgba(255,255,255,.08);
+      color:var(--muted);
+      text-align:center;
+      font-size:.95rem;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Soporte y contacto</h1>
-    <p class="meta">
-      TaxiNeto360Plus • Última actualización: 26/10/2025 •
-      Contacto directo: <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
-    </p>
-  </header>
+  <main class="wrap">
+    <header>
+      <h1>Soporte y contacto</h1>
+      <p class="meta">
+        TaxiNeto360Plus • Última actualización: 26/10/2025 •
+        Contacto directo: <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
+      </p>
+    </header>
 
-  <section>
-    <h2>1. Cómo obtener soporte</h2>
-    <p>
-      Si tienes problemas con la app, errores al iniciar sesión, dudas sobre tus datos o necesitas ayuda técnica,
-      puedes contactar directamente por correo electrónico a:
-      <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>.
-    </p>
-    <p>Por favor, incluye en el mensaje:</p>
-    <ul>
-      <li>Tu correo de registro (el que usas en la app).</li>
-      <li>Modelo de tu dispositivo y versión de Android.</li>
-      <li>Descripción breve del problema o captura de pantalla (si es posible).</li>
-    </ul>
-  </section>
+    <section class="card">
+      <h2>1. Cómo obtener soporte</h2>
+      <p>
+        Si tienes problemas con la app, errores al iniciar sesión, dudas sobre tus datos o necesitas ayuda técnica,
+        contacta directamente por correo electrónico:
+        <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>.
+      </p>
+      <p>Por favor incluye en tu mensaje:</p>
+      <ul>
+        <li>Tu correo de registro (el usado en la app).</li>
+        <li>Modelo del dispositivo y versión de Android.</li>
+        <li>Descripción breve del problema o captura de pantalla (si es posible).</li>
+      </ul>
+    </section>
 
-  <section class="card">
-    <h2>2. Preguntas frecuentes</h2>
-    <ul>
-      <li><strong>¿Olvidé mi contraseña?</strong><br />
-        En la pantalla de inicio de sesión toca <em>“¿Olvidaste tu contraseña?”</em> para recibir un enlace de recuperación en tu correo.
-      </li>
+    <section class="card">
+      <h2>2. Preguntas frecuentes</h2>
+      <ul>
+        <li><strong>¿Olvidé mi contraseña?</strong><br />
+          En la pantalla de inicio toca <em>“¿Olvidaste tu contraseña?”</em> para recibir un enlace de recuperación en tu correo.
+        </li>
 
-      <li><strong>¿Cómo elimino mi cuenta y todos mis datos?</strong><br />
-        Desde la app: Ajustes → Privacidad → <em>Eliminar cuenta y datos</em>.  
-        También puedes hacerlo desde la web:
-        <a href="eliminar-cuenta-taxineto360plus.html">Eliminar cuenta y datos</a>.
-      </li>
+        <li><strong>¿Cómo elimino mi cuenta y datos?</strong><br />
+          Desde la app: Ajustes → Privacidad → <em>Eliminar cuenta y datos</em>.  
+          O directamente desde la web:
+          <a href="eliminar-cuenta-taxineto360plus.html">Eliminar cuenta y datos</a>.
+        </li>
 
-      <li><strong>¿Cómo recupero mis jornadas si cambié de móvil?</strong><br />
-        Solo necesitas iniciar sesión con el mismo correo que usabas antes.  
-        Todos tus datos se sincronizan automáticamente mediante Firebase.
-      </li>
+        <li><strong>¿Cómo recupero mis jornadas si cambié de móvil?</strong><br />
+          Solo inicia sesión con el mismo correo; los datos se sincronizan automáticamente mediante Firebase.
+        </li>
 
-      <li><strong>¿Por qué no puedo subir fotos?</strong><br />
-        Asegúrate de haber concedido permiso a la cámara o galería.  
-        También revisa tu conexión a internet y que la imagen pese menos de 10 MB.
-      </li>
+        <li><strong>¿Por qué no puedo subir fotos?</strong><br />
+          Verifica permisos de cámara o galería y que la imagen pese menos de 10 MB.  
+          También revisa tu conexión a internet.
+        </li>
 
-      <li><strong>¿La app tiene anuncios o seguimiento?</strong><br />
-        No. TaxiNeto360Plus no contiene anuncios, analítica ni recopilación de datos de comportamiento.
-      </li>
-    </ul>
-  </section>
+        <li><strong>¿La app tiene anuncios o rastreo?</strong><br />
+          No. TaxiNeto360Plus no contiene anuncios ni recopila datos analíticos o de comportamiento.
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>3. Pagos y descargas</h2>
-    <p>
-      El acceso completo a TaxiNeto360Plus se obtiene mediante un <strong>pago único</strong> en <strong>Google Play</strong>.
-      No existen suscripciones ni cobros posteriores.  
-      Los pagos y reembolsos se gestionan conforme a las <strong>políticas oficiales de Google Play</strong>.
-    </p>
-  </section>
+    <section class="card">
+      <h2>3. Pagos y descargas</h2>
+      <p>
+        El acceso completo a TaxiNeto360Plus se obtiene con un <strong>pago único</strong> gestionado por <strong>Google Play</strong>.
+        No existen suscripciones ni cobros posteriores.  
+        Los pagos y reembolsos se rigen por las <strong>políticas de Google Play</strong>.
+      </p>
+    </section>
 
-  <section>
-    <h2>4. Recomendaciones básicas</h2>
-    <ul>
-      <li>Mantén la app actualizada para disfrutar de las mejoras y correcciones.</li>
-      <li>Verifica tu conexión antes de guardar o subir recibos.</li>
-      <li>No compartas tu cuenta ni tu contraseña con otras personas.</li>
-      <li>Si detectas fallos, notifícalos indicando el paso exacto donde ocurre el error.</li>
-    </ul>
-  </section>
+    <section class="card">
+      <h2>4. Recomendaciones básicas</h2>
+      <ul>
+        <li>Mantén la app actualizada para disfrutar de mejoras y correcciones.</li>
+        <li>Verifica tu conexión antes de subir recibos o fotos.</li>
+        <li>No compartas tu cuenta ni contraseña.</li>
+        <li>Si detectas errores, describe el paso exacto donde ocurre para una resolución más rápida.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>5. Privacidad y seguridad</h2>
-    <p>
-      La app protege tus datos mediante autenticación individual y cifrado en tránsito (HTTPS).
-      No compartimos ni vendemos información a terceros.
-      Puedes consultar la <a href="privacidad-taxineto360plus.html">Política de Privacidad</a> completa.
-    </p>
-  </section>
+    <section class="card">
+      <h2>5. Privacidad y seguridad</h2>
+      <p>
+        Tus datos están protegidos con autenticación individual y cifrado HTTPS.
+        No compartimos ni vendemos información a terceros.
+        Consulta la <a href="privacidad-taxineto360plus.html">Política de Privacidad</a>.
+      </p>
+    </section>
 
-  <section>
-    <h2>6. Tiempo de respuesta</h2>
-    <p>
-      Paula Sánchez responderá a los correos de soporte lo antes posible,
-      normalmente dentro de un plazo de <strong>24 a 72 horas laborables</strong>.
-      En algunos casos, la respuesta puede tardar más si se requiere análisis técnico adicional.
-    </p>
-  </section>
+    <section class="card">
+      <h2>6. Tiempo de respuesta</h2>
+      <p>
+        Paula Sánchez responderá a los correos de soporte lo antes posible,
+        normalmente en un plazo de <strong>24 a 72 horas laborables</strong>.
+        En casos que requieran revisión técnica, la respuesta puede tardar más.
+      </p>
+    </section>
 
-  <footer class="meta">
-    © 2025 Paula Sánchez — Desarrolladora independiente, Barcelona (España).  
-    Contacto: <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
-  </footer>
+    <footer>
+      © 2025 Paula Sánchez — Desarrolladora independiente, Barcelona (España) • 
+      <a href="mailto:taxi360barcelona@gmail.com">taxi360barcelona@gmail.com</a>
+    </footer>
+  </main>
 </body>
 </html>
 
